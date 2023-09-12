@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(53, 56, 61);
+}
+
+.noscroll::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-weight: normal;
+    margin-left: -3%;
+}
+
+.textbox {
+    width: 50vw;
+    margin-left: 24%;
+}
+
+#test {
+    position: absolute;
+    z-index: 9;
+    background-color: lightgrey;
+    padding: 0px;
+    text-align: center;
+    border: 5px solid grey;
+    color: black;
+}
+
+#testhandle {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: rgb(182, 182, 182);
+}
+
+#test p {
+    padding: 10px;
+}
+
+.box_lyr1  {
+    display: grid;
+    background: none;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+    margin-left: 12.4%;
+    margin-top: 7.4%;
+}
+
+.box_lyr2 {
+    width: 25vw;
+    height: 80vh;
+    background-color: lightgrey;
+}
+
+.block {
+    width: 150px;
+    height: 150px;
+    cursor: move;
+    position: absolute;
+    background-color: aliceblue;
+}
+
+#b1 {
+    background-color: rgb(170, 7, 7);
+    z-index: 9;
+}
+
+#b2 {
+    background-color: darkslategrey;
+    color: white;
+    z-index: 7;
+}
+
+#b2 p {
+    padding: 10px;
+}
+
+#b3 {
+    background-color: rgb(82, 134, 61);
+    z-index: 8;
+    top: 74vh;
+}
+
+.reset {
+    position: absolute;
+    left: 45%;
+    top: 37%;
+    padding: 10px;
+    color: white;
+    background-color: darkslategrey;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+}
+
+.reset:hover {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: darkslategrey;
+}

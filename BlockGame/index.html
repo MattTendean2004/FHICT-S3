@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Block "Game"</title>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <link rel="icon" type="image/ico" href="favicon.ico"></link>
+    </head>
+    <body class="noscroll">
+        <h1>Click and drag</h1>
+        <div id="test">
+        <div id="testhandle">Test window</div>
+        <p>Just to make sure the code works.</p>
+        <p>Drag to move around. Thanks W3Schools.</p>
+        </div>
+
+        <script src="code.js"></script>
+
+        <div class="textbox">
+            <p>Code used to move the boxes are slightly trimmed versions of a code provided by W3Schools.</p>
+            <p>I have not yet figured out a code that can identify the block you selected and only move that one. It is *theoretically* possible if the code can get the id of the block under it, which is then fed into the code.</p>
+            <p>For now, every block requires its own JS file, which isn't great, but it works.</p>
+            <p><b>The blue box will attempt to lock onto the assigned space.</b></p>
+        </div>
+
+
+        <button class="reset" onClick="window.location.reload()">Reset Blocks</button>
+        
+        <div class="box_lyr1">
+            <div class="box_lyr2">
+                <div class="block" id="b1"></div>
+                <div class="block" id="b3"></div>
+            </div>
+            <div class="box_lyr2">
+                <div class="block" id="b2"><p>This block will attempt to lock on.</p></div>
+            </div>
+        </div>
+        <script src="block1.js"></script>
+        <script src="block2.js"></script>
+        <script src="block3.js"></script>
+    </body>
+</html>
