@@ -40,16 +40,16 @@ function dragElement(elmnt) {
   function elementLockon(e) {
     e = e || window.event;
     e.preventDefault();
-    //defpos     : top 308   left 790   px
-    //Oppositebox: top 308   left 366   px
-    //Midpoint   :           left 585   px
+    //defpos     : top 309   left 790   px
+    //Oppositebox: top 309   left 367   px
+    //Midpoint   :           left 625   px
 
     if (e.clientY < 308){               // Check if above tray
-        pos2 = 307;                     // Reset to top of tray
+        pos2 = 309;                     // Reset to top of tray
       } else if(e.clientY > 450) {      // If not too close to asigned pos
         pos2 = e.clientY;               // Move to cursor
       } else {                          // If too close to asigned pos
-        pos2 = 307;                     // Reset to pos
+        pos2 = 309;                     // Reset to pos
       }
     
     if (e.clientX > 1000){              // Check if more than halfway across right tray (Also covers going off the tray entirely)
